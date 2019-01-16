@@ -88,11 +88,11 @@ class RegisterController extends Controller
         File::put(public_path() . '/avatars/' . $user->getId() . ".jpg", $fileContents);
         $picture =($user->getId() . ".jpg");
 
-        if ($provider=='github'){
+//         if ($provider=='github'){
 
-            $user->name='User';
+//             $user->name='User';
 
-        }
+//         }
 
             return User::create([
 
